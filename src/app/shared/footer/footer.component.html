@@ -1,0 +1,13 @@
+<div class="footer-main">
+    @for (item of resource_urls; track item.title) {
+        <a  class=""
+            href="{{ item.link }}"
+            target="_blank"
+            rel="noopener">
+            
+            <mat-icon aria-hidden="false" aria-label="Reddit Icon" fontIcon="reddit"></mat-icon>
+            <span class="text">{{ item.title }}</span>
+            
+        </a>
+    }
+</div>

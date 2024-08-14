@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "EduVICWANTBeginner";
+    src: url(./assets/fonts/EduVICWANTBeginner/EduVICWANTBeginner-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+    --recipe-font: "EduVICWANTBeginner", "Intern";
+    --general-font: "Roboto", "Intern";
+}
+
+body {
+    font-family: var(--general-font);
+}
