@@ -1,0 +1,12 @@
+.header-main {
+    min-height: var(--header-height);
+    padding-left: var(--content-buffer-size);
+
+    background-color: var(--color-yellow-100);
+    
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}

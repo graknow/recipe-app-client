@@ -13,11 +13,13 @@
     --recipe-font: "EduVICWANTBeginner", "Intern";
     --general-font: "Roboto", "Intern";
 
-    --color-yellow-100: #ffff00;
+    --color-yellow-100: #d8d850;
     --color-yellow-75: #dddd00;
 
     --color-foreground-main: #101010;
     --color-background-main: #e0e0e0;
+
+    --content-buffer-size: 5%;
 
     /* Footer */
     --footer-url-color: #fafafa;
@@ -25,6 +27,9 @@
 
     --footer-background-color: #707070;
     --footer-primary-color: #555555;
+
+    /* Header */
+    --header-height: 75px;
 }
 
 html {
@@ -34,4 +39,8 @@ html {
 
 body {
     font-family: var(--general-font);
+    padding-left: var(--content-buffer-size);
+    padding-right: var(--content-buffer-size);
+    margin-right: 0px;
+    margin-left: 0px;
 }

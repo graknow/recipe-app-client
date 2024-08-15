@@ -1,10 +1,12 @@
 .footer-main {
     color: var(--footer-url-color);
     background-color: var(--footer-background-color);
+    border-top: var(--footer-primary-color) solid 5px;
+    border-right: var(--footer-primary-color) solid 5px;
+    border-left: var(--footer-primary-color) solid 5px;
 
-    position: fixed;
     font-size: 12px;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Container work to create the sections in the footer */
