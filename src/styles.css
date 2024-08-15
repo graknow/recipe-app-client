@@ -22,9 +22,9 @@
     /* Footer */
     --footer-url-color: #fafafa;
     --footer-url-color-hover: #d0d0d0;
-    --footer-url-color-last: #c0b9ff;
 
     --footer-background-color: #707070;
+    --footer-primary-color: #555555;
 }
 
 html {

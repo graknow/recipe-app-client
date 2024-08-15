@@ -1,24 +1,72 @@
 .footer-main {
-    color: var(--url-color);
+    color: var(--footer-url-color);
     background-color: var(--footer-background-color);
+
+    position: fixed;
+    font-size: 12px;
+    width: 100vw;
 }
 
+/* Container work to create the sections in the footer */
+.container {
+    min-height: 150px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.item {
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.item.left {
+    border-right: var(--footer-primary-color) solid 2px;
+    padding-right: 25px;
+    justify-content: end;
+}
+
+.item.right {
+    padding-left: 25px;
+
+    justify-content: start;
+}
+
+/* URLs */
 .url {
-    color: var(--url-color);
+    color: var(--footer-url-color);
+    display: flex;
+    align-items: center;
+}
+
+.url .text {
+    padding-left: 5px;
 }
 
 .url:hover {
-    color: var(--url-color-hover);
+    color: var(--footer-url-color-hover);
 }
 
 .url:visited {
-    color: var(--url-color-last);
+    color: var(--footer-url-color);
 }
 
-.white-icon {
-    color: white;
+.url:visited:hover {
+    color: var(--footer-url-color-hover);
 }
-/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
-.white-icon svg {
-    fill: white;
+
+/* List styling */
+ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+li:not(li:last-of-type) {
+    padding-bottom: 2px;
 }

@@ -1,13 +1,25 @@
 <div class="footer-main">
-    @for (item of resource_urls; track item.title) {
-        <a  class="url"
-            href="{{ item.link }}"
-            target="_blank"
-            rel="noopener">
+    <div class="container">
+        <div class="item left">
+            <p>Developed by Grant Knowlton.</p>
+        </div>
+        <div class="item right">
+            <ul>
+            @for (item of resource_urls; track item.title) {
+                <li>
+                    <a
+                        class="url"
+                        [href]="item.link"
+                        target="_blank"
+                        rel="noopener">
 
-            <mat-icon aria-hidden="true" svgIcon="reddit"></mat-icon>
-            
-            {{ item.title }}
-        </a>
-    }
+                        <mat-icon aria-hidden="true" [svgIcon]="item.icon"></mat-icon>
+                        
+                        <span class="text">{{ item.title }}</span>
+                    </a>
+                </li>
+            }
+            </ul>
+        </div>
+    </div>
 </div>
