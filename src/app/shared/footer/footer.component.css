@@ -1,4 +1,24 @@
 .footer-main {
-    color: rgb(240, 240, 240);
-    background-color: rgb(100, 100, 100);
+    color: var(--url-color);
+    background-color: var(--footer-background-color);
+}
+
+.url {
+    color: var(--url-color);
+}
+
+.url:hover {
+    color: var(--url-color-hover);
+}
+
+.url:visited {
+    color: var(--url-color-last);
+}
+
+.white-icon {
+    color: white;
+}
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.white-icon svg {
+    fill: white;
 }

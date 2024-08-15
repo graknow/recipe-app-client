@@ -9,8 +9,27 @@
 }
 
 :root {
+    /* General */
     --recipe-font: "EduVICWANTBeginner", "Intern";
     --general-font: "Roboto", "Intern";
+
+    --color-yellow-100: #ffff00;
+    --color-yellow-75: #dddd00;
+
+    --color-foreground-main: #101010;
+    --color-background-main: #e0e0e0;
+
+    /* Footer */
+    --footer-url-color: #fafafa;
+    --footer-url-color-hover: #d0d0d0;
+    --footer-url-color-last: #c0b9ff;
+
+    --footer-background-color: #707070;
+}
+
+html {
+    background-color: var(--color-background-main);
+    color: var(--color-foreground-main);
 }
 
 body {

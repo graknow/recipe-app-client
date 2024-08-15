@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class FooterComponent {
   resource_urls: { title: string, link: string, icon: string }[] = [
-    { title: "r/recipes", link: "https://www.reddit.com/r/recipes/", icon: "reddit" }
+    { title: "Client Source", link: "https://github.com/graknow/recipe-app-client", icon: "github" },
+    { title: "Server Source", link: "https://github.com/graknow/recipe-app", icon: "github" }
   ]
 }
