@@ -1,3 +1,3 @@
-export const environment_common = {
+export const environmentCommon = {
     
 }

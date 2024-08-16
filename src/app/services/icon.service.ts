@@ -5,7 +5,10 @@ import { MatIconRegistry } from '@angular/material/icon';
 
 import { Icon } from '../enums/icons.enum';
 
-@Injectable({ providedIn: "root" })
+@Injectable(
+    { 
+        providedIn: "root" 
+    })
 export class IconService {    
     constructor(
         private domSanitizer: DomSanitizer,

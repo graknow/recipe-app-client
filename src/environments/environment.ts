@@ -1,5 +1,6 @@
-import { environment_common } from "./environment.common";
+import { environmentCommon } from "./environment.common";
 
 export const environment = {
     production: true,
+    serverBaseUrl: ''
 };
