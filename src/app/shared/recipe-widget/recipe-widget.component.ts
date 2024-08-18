@@ -28,4 +28,8 @@ export class RecipeWidgetComponent {
     this.id = id;
     this.view = view;
   }
+
+  onClickHandler = () => {
+    console.log("oh yeah");
+  }
 }

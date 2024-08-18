@@ -9,6 +9,7 @@
     background-color: var(--color-gray-100);
     overflow: hidden;
     font-family: var(--recipe-font);
+    cursor: pointer;
 }
 
 .widget-image {
