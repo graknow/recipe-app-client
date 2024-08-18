@@ -21,12 +21,11 @@ export class RecipeWidgetComponent {
     };
   }
 
+  get Id() { return this.id; }
+  get Recipe() { return this.view }
+
   init = (id: number, view: RecipeWidgetView): void => {
     this.id = id;
     this.view = view;
   }
-
-  getId = (): number => { return this.id; }
-
-  getView = (): RecipeWidgetView => { return this.view; }
 }

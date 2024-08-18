@@ -8,6 +8,7 @@
     border-radius: 5px;
     background-color: var(--color-gray-100);
     overflow: hidden;
+    font-family: var(--recipe-font);
 }
 
 .widget-image {
@@ -19,6 +20,7 @@
 }
 
 .card-body {
+    width: inherit;
     display: grid;
 }
 
@@ -28,6 +30,7 @@
 }
 
 .card-text {
+    width: inherit;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -51,9 +54,11 @@
 
 .text-header {
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: 9px;
 }
 
 .text-body {
-    line-height: 21px;
+    max-width: inherit;
+    line-height: 22px;
+    overflow-wrap: break-word;
 }
