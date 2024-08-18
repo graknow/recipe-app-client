@@ -2,7 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
 import { environment } from "../../environments/environment";
-import { RecipeResponse, RecipeSingleQuery } from "../interfaces/recipe.interface";
+import { RecipeResponse, RecipeSingleQuery, RecipeWidgetView } from "../interfaces/recipe.interface";
 import { RecipeBasePath, RecipeSinglePath } from "../constants/server-api.constants";
 import { HttpQueryService } from "./http-query.service";
 import { RecipeRandom } from "../enums/recipe-random.enum";
@@ -46,5 +46,17 @@ export class RecipeService {
     let request = this.queryService.buildRequestWithQuery(this.recipeUrlSingle, query);
 
     return this.http.get<RecipeResponse>(request);
+  }
+
+  getRecipeRandom = (recipeRandomType: RecipeRandom): Observable<RecipeResponse> => { return this.getRecipe(-1, recipeRandomType); }
+
+  // View generators
+
+  responseToWidgetView = (recipe: RecipeResponse): RecipeWidgetView => {
+    return {
+      name: recipe.name,
+      author: recipe.author,
+      description: recipe.description
+    };
   }
 }

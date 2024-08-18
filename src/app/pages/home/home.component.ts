@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { RecipeRandom } from '../../enums/recipe-random.enum';
+import { RecipeWidgetComponent } from '../../shared/recipe-widget/recipe-widget.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    RecipeWidgetComponent
+  ],
   providers: [
     RecipeService
   ],
@@ -15,10 +18,16 @@ import { RecipeRandom } from '../../enums/recipe-random.enum';
 export class HomeComponent {
   url: string;
 
+  @ViewChild('dailyRecipe') private dailyRecipeWidget: RecipeWidgetComponent = new RecipeWidgetComponent();
+
   constructor(
     private recipeService: RecipeService
   ) {
     this.url = recipeService.RecipeBaseUrl;
-    this.recipeService.getRecipe(3, RecipeRandom.standard).subscribe(data => { this.url = data.name || "" });
+    let response = this.recipeService.getRecipeRandom(RecipeRandom.date);
+
+    response.subscribe(data => {
+      this.dailyRecipeWidget.init(data.id, this.recipeService.responseToWidgetView(data));
+    });
   }
 }

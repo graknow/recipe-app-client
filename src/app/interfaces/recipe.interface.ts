@@ -1,3 +1,4 @@
+// HTTP Response
 export interface RecipeResponse {
   id: number;
   name: string;
@@ -6,6 +7,14 @@ export interface RecipeResponse {
   instructions: string[];
 }
 
+// Views for various pages.
+export interface RecipeWidgetView {
+  name: string;
+  author: string | null;
+  description: string | null;
+}
+
+// Query parameters.
 export interface RecipeSingleQuery {
   id: number;
   randomType?: string;
