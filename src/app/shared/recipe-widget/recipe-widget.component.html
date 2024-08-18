@@ -1,1 +1,20 @@
-<p>{{ this.getView().name }}</p>
+<div class="recipe-widget-main">
+    <img src="images/recipe-default.jpg" width="612px" height="408px" class="widget-image">
+    <div class="card-body">
+        <div class="card-lines">
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+            <div class="line">&nbsp;</div>
+        </div>
+        <div class="card-text">
+            <p class="text-header text">{{ this.getView().name }}</p>
+            <p class="text-body text">{{ this.getView().author || "No author." }}</p>
+            <p class="text-body text">{{ this.getView().description || "No description." }}</p>
+        </div>
+    </div>
+</div>

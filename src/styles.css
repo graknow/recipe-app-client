@@ -16,9 +16,13 @@
     --color-yellow-100: #e6cd00;
     --color-yellow-75: #dddd00;
 
+    --color-gray-100: #eeeeee;
+    --color-gray-75: #aaaaaa;
+    --color-gray-50: #777777;
+
     --color-foreground-main: #101010;
     --color-background-main: #e0e0e0;
-    --color-background-content: #b8b8b8;
+    --color-background-content: #c5c5c5;
 
     --content-margin-size: 5%;
     --content-padding-size: 40px;
@@ -32,6 +36,10 @@
 
     /* Header */
     --header-height: 75px;
+
+    /* Widgets */
+    --notecard-red: #FF0000;
+    --notecard-blue: #87CEFA;
 }
 
 html {
